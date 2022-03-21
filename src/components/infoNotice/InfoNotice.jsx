@@ -4,29 +4,38 @@ import { PALLETS } from "style/theme";
 import styled from "styled-components";
 const InfoNotice = () => {
   const [count, setCount] = useState(2);
-  const [form, setForm] = useState([{ count: 1 }]);
+  const [form, setForm] = useState([{ count: 1, id: 1 }]);
 
   const addNotice = (newNotice) => {
     setCount((prev) => prev + 1);
-    setForm((prev) => [...prev, { ...newNotice, count }]);
+    setForm((prev) => [...prev, { ...newNotice, count, id: Math.random() }]);
   };
 
-  const delNotice = (noticeCount) => {
+  const delNotice = (targetItem) => {
     if (count <= 1) return;
     setCount((prev) => prev - 1);
 
-    setForm((prev) => prev.slice(0, prev.length - 1));
+    setForm((prev) => {
+      const filteredList = prev.filter(
+        (formItem) => formItem.id !== targetItem.id
+      );
+
+      return filteredList.map((item, index) => {
+        return { ...item, count: index + 1 };
+      });
+    });
   };
 
   console.log("InfoNotice Data Result", JSON.stringify(form));
+
   return (
     <InfoContainer>
       {form.map((notice) => (
         <InfoNoticeForm
-          key={notice.count}
+          key={notice.id}
           count={notice.count}
           notice={notice}
-          delNotice={delNotice}
+          delNotice={() => delNotice(notice)}
           setNotice={(transform) => {
             setForm((oldForm) =>
               oldForm.map((oldNotice) => {
