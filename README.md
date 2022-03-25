@@ -2,14 +2,11 @@
 
 ## 프로젝트 소개
 
-상품 등록 어드민 페이지
+커머스에 노출되는 상품의 신규 등록/수정을 할 수 있는 상품 등록 어드민 페이지를 구현하는 것을 목표로 하는 프로젝트입니다.
 
-## 팀원 소개
+## 팀 Repo 링크 가기
 
-🏃 [민지연](https://github.com/ichbinmin2)<br/>
-🏃‍ [박서윤](https://github.com/seoyuuun)<br/>
-🏃‍ [양다혜](https://github.com/dahye-program)<br/>
-🏃‍ [박서영](https://github.com/ongddree) (팀장)
+["On-Basic" Repo 바로가기](https://github.com/On-Basic/ADM_PRODUCT_ADD)
 
 ## 배포 주소
 
@@ -17,67 +14,25 @@
 
 ## 과제 구현 목록
 
-### 1 노출 및 판매 기간 설정 (박서윤)
+상품소개 이미지, 구매자 추천 이미지 섹션, 상품 정보 고시 (민지연)
 
-☑️ 제한 없음을 default값으로 지정
-
-☑️ 설정한 노출기간이 만료된 경우, 자동으로 '미노출' 상태로 변경
-
-☑️ 달력 및 시간 지정 컴포넌트 제공
-
-☑️ 30분 단위로 시간 지정
-
-☑️ 현재 시간을 기준으로 지난 시간으로 startDate 설정 제한
-
-☑️ 기간 시작 시간을 기준으로 그 이전의 시간으로 endDate 설정 제한
-
-### 2. 상품 등록 (양다혜)
-
-☑️ 카테고리 목록에서 제공된 카테고리 생성
-
-☑️ 상품명, 상품 코드, 상품 구성 소개 정보 입력
-
-☑️ 상품 썸네일 이미지 선택(이미지는 1개만 선택 가능)
-
-☑️ 상품 대표 이미지 선택(여러장 선택 가능)
-
-☑️ 이미지 파일명 출력 및 선택 삭제
-
-### 3. 상품 옵션 (박서영)
-
-☑️ 옵션은 옵션 세트 추가를 통해 등록할 수 있음
-
-☑️ 옵션 세트 및 옵션 세트 내 옵션은 여러 개 생성할 수 있음
-
-☑️ 옵션 세트 내 이미지는 1개만 지정 가능하며, 옵션은 여러 개 생성할 수 있음
-
-☑️ 관리자는 해당 옵션에 추가 옵션 상품을 등록할 수 있음
-
-☑️ 옵션 1개당 여러개의 추가 옵션 상품을 등록할 수 있음
-
-☑️ [추가 옵션 상품 등록] 버튼 TAP 시, 추가옵션 등록 SELL 추가됨
-
-☑️ 상품 정상가 : 상품의 정상가를 입력할 수 있음
-
-☑️ 상품 판매가 : 상품의 판매가를 입력할 수 있음
-
-### 4. 상품소개 이미지, 구매자 추천 이미지 섹션, 상품 정보 고시 (민지연)
-
-☑️ 정보고시 form이 추가될때마다 정보고시 생성 순서 숫자 count로 관리(default 값은 1)
-
-☑️ mock data로 title, placeholder 관리
+☑️ 정보고시 form 의 갯수 count로 관리(default 값은 1)
 
 ☑️ 정보고시 form 추가 기능, 추가 될 때마다 생성 순서 숫자 count +1
 
-☑️ 정보고시 form 삭제 기능, 삭제 될 때마다 생성 순서 숫자 count -1
+☑️ 정보고시 form 삭제 기능, 삭제 될 때마다 생성 순서 숫자 count -1 
 
-☑️ 고정된 title의 input값 실시간으로 form data로 output
+☑️ [리팩토링 추가(update : 3/21)](https://velog.io/@ichbinmin2/원티드-프리온보딩-프론트엔드-과정-2차-과제-상품-등록-관리-페이지) : 정보고시 form 삭제 기능 고유한 id 값으로 컨트롤하여 form count 순서대로 배치할 수 있도록 구현
 
-☑️ [항목 추가 버튼]을 누르면 [항목 옵션]이 추가되고 '타이틀' 및 '내용' 입력 가능
+☑️ form input의 title, placeholder 를 mock data로 관리 및 실시간 업데이트 기능 구현
 
-☑️ [항복 삭제 버튼]을 누르면 [항목 옵션] 삭제 가능
+☑️ [항목 추가 버튼]을 누르면 [항목 옵션]이 추가되고 'title' 및 '내용' 입력 가능
 
-☑️ 정보고시 내 입력된 모든 값(항목추가옵션 포함)은 form으로 실시간 업데이트 가능
+☑️ [항복 삭제 버튼]을 누르면 해당 [항목 옵션] 만 삭제 가능
+
+☑️ 정보고시 form 내 입력된 모든 값(항목추가옵션 포함)은 해당하는 form 데이터 형태로 실시간 업데이트 가능
+
+</br>
 
 ![상품 정보 고시 입력 값 예시](https://user-images.githubusercontent.com/53133662/151653704-f3c48d94-53de-405a-b74c-9b9f23f5c48c.png)
 
@@ -113,76 +68,179 @@
 
 <br/>
 
-#### 박서영
 
-☑️ Contentwrap : 기능별 섹션 레이아웃
+## 전체 기능 영상
 
-☑️ Button : font-color, background, border, text 등 인자를 받아 커스텀할 수 있는 버튼 컴포넌트
-
-☑️ Input : width, text, desc 등 인자를 받아 커스텀할 수 있는 Input 컴포넌트
-
-<br/>
-
-#### 양다혜
-
-☑️ InsertImage : 이미지 첨부 컴포넌트(isMultiple값의 true, false로 하나의 사진 또는 여러개의 사진을 구분, 이미지 선택 시 우측에 파일명 출력되고 배열에 저장, X버튼 클릭시 삭제)
-
-☑️ InsertImagePreview : 이미지 프리뷰 컴포넌트(이미지 선택시 미리보기로 이미지 출력, X버튼 클릭시 삭제, 파일명과 src값 저장)
-
-
-## 기능별 영상
-
-### 1 노출 및 판매 기간 설정 (박서윤)<br/>
+### 노출 및 판매 기간 설정
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/84560867/151652562-43658a25-5ff8-40a4-bf59-bcde24ab04c2.gif)
 
-### 2. 상품 등록 (양다혜)
+### 상품 등록
 
-- ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/58350897/151654105-50f25d74-c3dd-42fd-ae02-aa17e0414743.gif)
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/58350897/151654105-50f25d74-c3dd-42fd-ae02-aa17e0414743.gif)
 
-### 3. 상품 옵션 (박서영)
+### 상품 옵션
 
-- 옵션 세트 추가 <br/> <br/>
-  ![옵션세트추가](https://user-images.githubusercontent.com/93420227/151652844-b57c1b8a-1bdf-405a-977d-3b7f7e4b7b90.gif)
-- 옵션 세트 내 옵션 추가 <br/> <br/>
-  ![옵션세트내옵션추가](https://user-images.githubusercontent.com/93420227/151652835-69846b15-8f79-4461-a56c-4ffb39dcbc50.gif)
-- 추가 옵션 추가 <br/> <br/>
-  ![추가옵션등록](https://user-images.githubusercontent.com/93420227/151652854-8cda92c2-0287-4e81-bf09-795a90e400d9.gif)
-- 이미지 프리뷰 첨부 <br/> <br/>
-  ![이미지첨부](https://user-images.githubusercontent.com/93420227/151652847-52a1969d-4eae-48d3-9679-2fbc334518a8.gif)
+옵션 세트 추가 <br/><br/> ![옵션세트추가](https://user-images.githubusercontent.com/93420227/151652844-b57c1b8a-1bdf-405a-977d-3b7f7e4b7b90.gif) <br/><br/> 
+옵션 세트 내 옵션 추가 <br/><br/>  ![옵션세트내옵션추가](https://user-images.githubusercontent.com/93420227/151652835-69846b15-8f79-4461-a56c-4ffb39dcbc50.gif) <br/><br/> 
+추가 옵션 추가 <br/><br/>  ![추가옵션등록](https://user-images.githubusercontent.com/93420227/151652854-8cda92c2-0287-4e81-bf09-795a90e400d9.gif) <br/><br/> 
+이미지 프리뷰 첨부 <br/><br/> ![이미지첨부](https://user-images.githubusercontent.com/93420227/151652847-52a1969d-4eae-48d3-9679-2fbc334518a8.gif) <br/><br/> 
 
-### 4. 상품 정보 고시 (민지연)
+### 상품 정보 고시(민지연)
+상품 정보 고시 (항목 옵션 추가/삭제) <br/><br/>  ![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/53133662/151654174-ea538855-2522-46fc-af51-e1ce68782f4e.gif) <br/><br/> 
+상품옵션 toggle <br/><br/> ![상품 옵션 toggle](https://user-images.githubusercontent.com/53133662/151653417-d94492b6-d325-4d99-9d84-0d93c8828a44.gif) <br/><br/> 
+상품소개이미지, 구매자추천이미지 <br/><br/> ![상품소개이미지, 구매자추천이미지](https://user-images.githubusercontent.com/53133662/151653648-6686792f-e4dc-4b70-8db4-47446d48d42f.png) <br/><br/> 
 
-- 상품 정보 고시 (전체 form 추가/삭제, 정보고시 생성 순서 숫자 표기)  <br/> <br/>
- ![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/53133662/151654179-7e4c0d5b-0a90-4ea5-8bc9-cc590c8eb54b.gif)
-- 상품 정보 고시 (input 입력값 받기)  <br/> <br/>
-  ![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/53133662/151654177-19bfd785-c0f8-41a2-ae85-d5a7f01424c8.gif)
-- 상품 정보 고시 (항목 옵션 추가/삭제)  <br/> <br/>
-  ![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/53133662/151654174-ea538855-2522-46fc-af51-e1ce68782f4e.gif)
-- 상품옵션 toggle <br/> <br/>
-  ![상품 옵션 toggle](https://user-images.githubusercontent.com/53133662/151653417-d94492b6-d325-4d99-9d84-0d93c8828a44.gif)
-- 상품소개이미지, 구매자추천이미지 <br/> <br/>
-  ![상품소개이미지, 구매자추천이미지](https://user-images.githubusercontent.com/53133662/151653648-6686792f-e4dc-4b70-8db4-47446d48d42f.png)
+## 추가 리팩토링 : [id 값으로 form 삭제/관리하기 (update : 3/21)](https://velog.io/write?id=78a455f3-cace-41cf-817a-64f0e39b4582)
 
-## 과제 후기
+#### ☑️ 이슈 확인 
 
-### 🙋‍♀️ 박서윤
+정보고시 폼을 추가/삭제하는 기능을 구현하면서, 정보고시 폼 리스트에 `count` 값을 추가하여 폼의 갯수를 `count`로 관리하도록 해왔다. 그런데 정보고시 폼 삭제 기능에 약간의 문제가 있었다는 걸 깨달았다. 삭제 버튼을 클릭하여 삭제되는 폼이 해당 폼이 아니라 정보고시 리스트의 마지막 순서의 폼이 삭제되었기 때문이다.
 
-원활한 협업을 위해서 환경 셋팅에 들이는 시간을 아까워하지 않아야함을 다시 한번 느낄 수 있었으며, 효율적인 협업을 위한 핵심적인 방법 중 하나는, 충분한 협의를 통해 공통된 모듈을 분리하고, 어떻게 task를 맡을지를 확실히 분담해 중복되는 개발 작업이 이루어지지 않도록 하고, 불필요한 작업 시간을 줄이도록 하는 것임을 체득할 수 있었던 협업 프로젝트였다.
-<br/>
+#### InfoNotice.jsx
 
-### 🙋‍♀️ 양다혜
+```js
+  const [count, setCount] = useState(2);
+  const [form, setForm] = useState([{ count: 1 }]);
 
-협업에 익숙치 않았었는데, 소통의 중요성을 느끼며 협업하는 법을 배울 수 있었다. 마음이 급하더라도 초기 세팅과 프로젝트 구조 설계에 충분한 시간을 쓰는 것은 충분히 가치있는 일이라는 것을 경험하였다. 또한 간단하게 보였던 것도 고려할 점이 많고 재사용을 위한 설계가 중요하다는 것을 깨달았다.
+  const addNotice = (newNotice) => {
+    setCount((prev) => prev + 1);
+    setForm((prev) => [...prev, { ...newNotice, count }]);
+  };
 
-### 🙋‍♀️ 박서영
+  const delNotice = () => {
+    if (count <= 1) return;
+    setCount((prev) => prev - 1);
+    setForm((prev) => prev.slice(0, prev.length - 1));
+  };
 
-테스크 분석 및 분리, 공용 컴포넌트 제작, 깃헙 이슈를 통한 프로젝트 관리, 데이터 명세 등 사전에 충분한 협의를 통해 체계적으로 계획을 세웠던 프로젝트였다. 불필요하게 낭비되는 코드를 줄이고 건설적으로 코드를 설계할 수 있어서 공부가 많이 되었다.
+  return (
+    <InfoContainer>
+      {form.map((notice) => (
+        <InfoNoticeForm
+          key={notice.count}
+          count={notice.count}
+          notice={notice}
+          delNotice={delNotice}
+...
 
-### 🙋‍♀️ 민지연
+```
 
-[프로젝트 회고](https://velog.io/@ichbinmin2/원티드-프리온보딩-프론트엔드-과정-2차-과제-상품-등록-관리-페이지)
+`count` 로 갯수를 관리하면서 정보고시 폼 리스트의 배열을 `slice(0, prev.length - 1)` 로 가장 마지막 순서만 삭제하다보니 내가 선택해서 삭제하려고 했던 form을 삭제할 수 없었다.
 
+#### ☑️ 어떻게 해결했을까?
+
+특정한 폼을 삭제하기 위해서는 정보고시 폼 마다 고유한 `id` 값이 필요했다. 현재는 `count`로 관리해주고 있었지만, 고유한 `id` 값을 추가해서 `id`를 기반으로 폼 리스트를 필터링해주려고 했다. 이제 `form`의 상태(state) 초기값에 `id` 값을 지정하고, 정보고시 폼이 추가될 때에도 마찬가지로 `Math.random()`을 이용하여`id` 값이 자동으로 생성될 수 있도록 했다.
+
+#### InfoNotice.jsx
+
+```js
+const [form, setForm] = useState([{ count: 1, id: 1 }]);
+
+  const addNotice = (newNotice) => {
+    setCount((prev) => prev + 1);
+    setForm((prev) => [...prev, { ...newNotice, count, id: Math.random() }]);
+  };
+
+```
+
+먼저 삭제 버튼의 `onClick` 이벤트로 특정 `form`의 데이터를 받아와야 했기 때문에 `form`을 매핑할 때 `InfoNoticeForm` 컴포넌트에 prop으로 전달했던 `delNotice()` 함수에 해당 `form`을 인자로 전달해주었다.
+
+
+```js
+  const delNotice = (targetItem) => {
+    if (count <= 1) return;
+    setCount((prev) => prev - 1);
+    setForm((prev) => prev.slice(0, prev.length - 1));
+  }
+  
+  return (
+    <InfoContainer>
+      {form.map((notice) => (
+        <InfoNoticeForm
+          key={notice.count}
+          count={notice.count}
+          notice={notice}
+          delNotice={() => delNotice(notice)}
+...
+```
+#### InfoNoticeForm.jsx
+
+```js
+const InfoNoticeForm = ({ count, notice, setNotice, delNotice }) => {
+  ...
+  return (
+    <Button 
+		...
+    	onClick={() => {
+    		delNotice();
+  		}} 
+	/>
+};
+```
+
+`delNotice()` 의 인자로 받아온 `targetItem`(form) 의 `id` 값과 기존의 폼 내부의 `id` 값과 비교하여 `targetItem`의 `id` 값이 form 의`id` 값과 다른 form(삭제 버튼으로 선택하지 않은 폼)만 남길 수 있도록 `filter()` 메소드로 필터링해주었다.
+
+
+```js
+  const delNotice = (targetItem) => {
+    if (count <= 1) return;
+    setCount((prev) => prev - 1);
+
+    setForm((prev) => {
+      const filteredList = prev.filter(
+        (formItem) => formItem.id !== targetItem.id
+      );
+
+      return filteredList.map((item, index) => {
+        return { ...item, count: index + 1 };
+      });
+    });
+  }
+
+```
+
+
+그리고 필터링 된 배열을 매핑하여 스프레드 연산자로 기존의 form 객체들을 그대로 받아오고, `count`를 index 값에 1을 더하는 방식으로 `count`를 새롭게 카운팅 해주었다. 여기까지 로직 상에는 크게 문제는 없어보였는데 라이브 서버로 확인해보았을 때 원하는 폼을 삭제하려고 해도 다른 폼이 삭제되는 이슈가 지속해서 발생했다. console로 남은 form을 출력해보면서 분명 삭제를 누른 폼의 데이터가 삭제 되었음을 확인했지만, UI상에서는 해당 폼이 삭제가 되는 것처럼 보여지지 않았던 것이다.
+
+```js
+return (
+    <InfoContainer>
+      {form.map((notice) => (
+        <InfoNoticeForm
+          key={notice.count}
+          count={notice.count}
+          notice={notice}
+          delNotice={() => delNotice(notice)}
+...
+```
+
+다시 코드를 천천히 살펴보니 아주 간단한 부분에서 문제가 있었음을 깨달았다. 바로 `form`을 매핑하여 `InfoNoticeForm` 컴포넌트에 prop으로 데이터를 넘길 때 `key`를 `notice.count`로 넘겨주고 있었던 것이다.
+
+
+```js
+return (
+    <InfoContainer>
+      {form.map((notice) => (
+        <InfoNoticeForm
+          key={notice.id}
+          count={notice.count}
+          notice={notice}
+          delNotice={() => delNotice(notice)}
+...
+```
+
+`key={notice.count}`을 `key={notice.id}`로 변경하고 나서야 원하는 form이 데이터 뿐만 아니라, UI 상으로도 정상적으로 삭제가 되는 것을 확인할 수 있었다. 또한 중간에 위치한 form을 삭제할 때마다 `count`도 삭제된 폼을 제외하고 재 카운팅되었다. 
+
+> React는 `key`를 통해서 현재 배열의 길이를 비롯하여 이미 렌더링한 아이템의 갯수를 확인할 수 있고 동시에 아이템의 '위치'까지 고려하게 된다. 그런데 React가 개별 아이템을 식별할 수 있도록 해주는 바로 이 `key` 값을 `count`로 설정을 해주었기 때문에, 해당 form을 삭제 해도 `key` 값은 교체가 되지 않아 이러한 문제가 발생했던 것이다. 초반에 `key`의 문제라고 생각하지 못하고 여러번 로직을 수정했는데.. 꽤나 허탈한 감이 있다. 앞으로는 아무리 간단한 로직이라도, 기본을 지키고 있는지 체크하면서 코드를 좀더 면밀하게 살펴보며 코드를 작성해야 겠다는 생각이 든다. 
+
+</br>
+
+## 프로젝트 후기
+
+[✍🏻 프로젝트 회고 보러가기!](https://velog.io/@ichbinmin2/원티드-프리온보딩-프론트엔드-과정-2차-과제-상품-등록-관리-페이지)
+
+</br>
 
 ## 프로젝트 구조 설명
 
@@ -241,52 +299,6 @@
     └── theme.js
 
 
-```
-
-### 데이터 post 명세
-
-```
-{
-  "product": {
-      "exposuredeadline": String,
-      "salesdeadline": String,
-      "categories": Array<string>,
-      "filtertags": Array<string>,
-      "title": String,
-      "desc": String,
-      "code": String,
-      "thumbnamil" : String,
-      "representativeimages": Array<string>,
-      "stock": Number,
-      "option + ${index}": {
-              "image": String,
-              "optiontit": String,
-              "regularprice" : Number,
-              "sellingprice" : Number,
-              "stock" : String,
-              "taxation" : String,
-              "addoption + ${index}": {
-                  "optiontit" : String,
-                  "regularprice" : Number
-                  }
-        }
-      "introimages": Array<string>,
-      "recommandedimages": Array<string>,
-      "informationnotice" : {
-          "productname": String,
-          "origin": String,
-          "ranking" : String,
-          "custody" : String,
-          "foodcode" : String,
-          "key" : String,
-        }
-    "deliverydesignation" : String,
-    "pickup" : String,
-    "preorderdelivery" : String,
-    "mileage" : String,
-    "thankyoucard" : String
-		}
-}
 ```
 
 <br/>
