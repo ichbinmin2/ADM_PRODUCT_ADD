@@ -91,7 +91,7 @@
 상품옵션 toggle <br/><br/> ![상품 옵션 toggle](https://user-images.githubusercontent.com/53133662/151653417-d94492b6-d325-4d99-9d84-0d93c8828a44.gif) <br/><br/> 
 상품소개이미지, 구매자추천이미지 <br/><br/> ![상품소개이미지, 구매자추천이미지](https://user-images.githubusercontent.com/53133662/151653648-6686792f-e4dc-4b70-8db4-47446d48d42f.png) <br/><br/> 
 
-## 추가 리팩토링 : [id 값으로 form 삭제/관리하기 (update : 3/21)](https://velog.io/write?id=78a455f3-cace-41cf-817a-64f0e39b4582)
+## 추가 리팩토링 : [id 값으로 form 삭제/관리하기 (update : 3/21)](https://velog.io/@ichbinmin2/원티드-프리온보딩-프론트엔드-과정-2차-과제-상품-등록-관리-페이지)
 
 #### ☑️ 이슈 확인 
 
