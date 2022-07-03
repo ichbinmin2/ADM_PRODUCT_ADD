@@ -1,97 +1,161 @@
-# 상품 등록 관리 페이지
 
-## 프로젝트 소개
+<h1 align="middle">2022 원티드 프리온보딩 프론트엔드 코스 기업과제 - 설로인</h1>
+<p align="middle">⚡️ React를 기반으로 구현한 커머스 노출 상품 등록 어드민 페이지</p>
+<p align="middle">
+<img width="1656" alt="image" src="https://user-images.githubusercontent.com/53133662/177025012-8f3db8cc-32c6-429d-b01a-7b43289a03ea.png">
+</p>
 
-커머스에 노출되는 상품의 신규 등록/수정을 할 수 있는 상품 등록 어드민 페이지를 구현하는 것을 목표로 하는 프로젝트입니다.
+<br />
 
-## 팀 Repo 링크 가기
 
-["On-Basic" Repo 바로가기](https://github.com/On-Basic/ADM_PRODUCT_ADD)
+## 🔎 프로젝트 소개 ( [Demo](https://brave-visvesvaraya-053de0.netlify.app/) )
 
-## 배포 주소
+**설로인에 노출되는 상품 등록/수정 어드민 페이지를 구현했습니다.**
 
-[배포 사이트 바로가기](https://brave-visvesvaraya-053de0.netlify.app/)
+커머스에 노출되는 상품의 신규 등록/수정이 가능한 상품 등록 어드민 페이지 프로젝트입니다. 제가 맡은 정보고시 form 섹션은 form 내부에서 각각의 input 값을 하나의 form 객체로 생성하여 처리할 수 있도록 하였고, 옵션 추가를 통해 유저가 자유롭게 form 안에서 새로운 옵션을 추가하고 데이터를 관리할 수 있도록 구현했습니다. 실시간으로 각 정보고시 form 마다 입력한 값들을 배열의 객체 값으로 관리하고 각 form을 카운트 하여, 백에서 최대한 처리하기 좋은 데이터 형태로 처리해주었습니다. 
 
-## 과제 구현 목록
+<br />
+
+## 📚 기술 스택
+
+| React.js  |  Styled-Components   | 
+| :--------:| :-----: |
+|  <img src="https://user-images.githubusercontent.com/21965795/176630651-1248191d-432c-45ac-b876-9e5ff54e36f9.png" width="100px" > |<img src="https://user-images.githubusercontent.com/21965795/176630662-2d123d45-d642-409b-b448-503a0d9810d8.png"  width="100px"/>|
+
+<br />
+
+## 🧩 디렉터리 구조
+
+```bash
+src
+├── App.css
+├── App.js
+├── components
+│   ├── buyerRecommend
+│   │   └── BuyerRecommend.jsx
+│   ├── common
+│   │   ├── Button.jsx
+│   │   ├── Input.jsx
+│   │   ├── InsertImage.jsx
+│   │   ├── InsertImagePreview.jsx
+│   │   ├── Radio.jsx
+│   │   ├── Toggle.jsx
+│   │   ├── datepicker
+│   │   │   ├── DateRange.jsx
+│   │   │   └── SingleDate.jsx
+│   │   └── index.js
+│   ├── infoNotice
+│   │   ├── InfoNotice.jsx
+│   │   └── infoNoticeForm
+│   │       └── InfoNoticeForm.jsx
+│   ├── layout
+│   │   ├── Contentwrap.jsx
+│   │   ├── navbar
+│   │   │   └── Navbar.jsx
+│   │   └── sidebar
+│   │       ├── Sidebar.jsx
+│   │       ├── SidebarData.js
+│   │       └── SubMenu.jsx
+│   ├── productExpoSalesPeriod
+│   │   ├── ExposurePeriodSet.jsx
+│   │   └── SalesPeriodSet.jsx
+│   ├── productInfo
+│   │   ├── Category.jsx
+│   │   ├── CategoryObject.js
+│   │   └── ProductInfo.jsx
+│   ├── productInfoImage
+│   │   └── ProductInfoImage.jsx
+│   ├── productOrderSet
+│   │   ├── ProductOrderStart.jsx
+│   │   └── ProductPickUp.jsx
+│   ├── productPreOrderReservation
+│   │   └── PreOrderReservetionSet.jsx
+│   └── productoption
+│       ├── Optionset.jsx
+│       ├── Suboption.jsx
+│       └── index.js
+├── hooks
+│   ├── SubmitForm.jsx
+│   ├── useForm.js
+│   └── validate.js
+├── index.css
+├── index.js
+├── logo.svg
+├── pages
+│   ├── admin.jsx
+│   └── adminSection
+│       ├── ExpoSalesPeriodSet.jsx
+│       ├── addoption.jsx
+│       ├── buyerRecmmend.jsx
+│       ├── pagesInfoNotice.jsx
+│       ├── productInfo.jsx
+│       ├── productInfoImg.jsx
+│       └── productorder.jsx
+└── style
+    ├── globalstyle.js
+    └── theme.js
+```
+
+<br />
+
+## 📌 프로젝트 과정 및 이슈 처리를 담은 회고
+
+[**프로젝트 회고 보러가기!**](https://velog.io/@ichbinmin2/원티드-프리온보딩-프론트엔드-과정-2차-과제-상품-등록-관리-페이지)
+
+<br />
+
+## ✅ 과제 구현 목록
 
 상품소개 이미지, 구매자 추천 이미지 섹션, 상품 정보 고시 (민지연)
 
-☑️ 정보고시 form 의 갯수 count로 관리(default 값은 1)
+✓ 정보고시 form 의 갯수 count로 관리(default 값은 1)
 
-☑️ 정보고시 form 추가 기능, 추가 될 때마다 생성 순서 숫자 count +1
+✓ 정보고시 form 추가 기능, 추가 될 때마다 생성 순서 숫자 count +1
 
-☑️ 정보고시 form 삭제 기능, 삭제 될 때마다 생성 순서 숫자 count -1 
+✓ 정보고시 form 삭제 기능, 삭제 될 때마다 생성 순서 숫자 count -1 
 
-☑️ [리팩토링 추가(update : 3/21)](https://velog.io/@ichbinmin2/원티드-프리온보딩-프론트엔드-과정-2차-과제-상품-등록-관리-페이지) : 정보고시 form 삭제 기능 고유한 id 값으로 컨트롤하여 form count 순서대로 배치할 수 있도록 구현
+✓ [리팩토링 추가(update : 3/21)](https://velog.io/@ichbinmin2/원티드-프리온보딩-프론트엔드-과정-2차-과제-상품-등록-관리-페이지) : 정보고시 form 삭제 기능 고유한 id 값으로 컨트롤하여 form count 순서대로 배치할 수 있도록 구현
 
-☑️ form input의 title, placeholder 를 mock data로 관리 및 실시간 업데이트 기능 구현
+✓ form input의 title, placeholder 를 mock data로 관리 및 실시간 업데이트 기능 구현
 
-☑️ [항목 추가 버튼]을 누르면 [항목 옵션]이 추가되고 'title' 및 '내용' 입력 가능
+✓ [항목 추가 버튼]을 누르면 [항목 옵션]이 추가되고 'title' 및 '내용' 입력 가능
 
-☑️ [항복 삭제 버튼]을 누르면 해당 [항목 옵션] 만 삭제 가능
+✓ [항복 삭제 버튼]을 누르면 해당 [항목 옵션] 만 삭제 가능
 
-☑️ 정보고시 form 내 입력된 모든 값(항목추가옵션 포함)은 해당하는 form 데이터 형태로 실시간 업데이트 가능
+✓ 정보고시 form 내 입력된 모든 값(항목추가옵션 포함)은 해당하는 form 데이터 형태로 실시간 업데이트 가능
 
-</br>
-
-![상품 정보 고시 입력 값 예시](https://user-images.githubusercontent.com/53133662/151653704-f3c48d94-53de-405a-b74c-9b9f23f5c48c.png)
-
-```
-[
-	{
-	"count":1,
-	"name":"제품명 내용",
-	"origin":"원산지 내용",
-	"ranking":"등급 내용",
-	"keep":"보관 내용",
-	"type":"식품 유형 내용",
-	"추가항목제목1":"추가항목내용1",
-	"추가항목제목2":"추가항목내용2"
-	}
-]
-
-```
-
-### 공통 컴포넌트
-
-#### 민지연
-
-☑️ Radio
+✓ 공통 UI 컴포넌트 : Radio
 
 - 사용하고자 하는 컴포넌트에 content, select, onChange를 받아 onChange로 event가 실행되면 select가 되도록 기능 
 
 - '제한 없음'을 default값으로 지정하여 자동으로 select 값 유지
 
-☑️ Toggle 
+✓ 공통 UI 컴포넌트 : Toggle 
 
 - boolean state 값을 받아 true, false로 state를 관리되도록 기능
 
+</br>
+
+<img width="1656" alt="image" src="https://user-images.githubusercontent.com/53133662/177025012-8f3db8cc-32c6-429d-b01a-7b43289a03ea.png">
+
+```
+[
+	{
+	"count":1,
+	"id":0.17664733026533797,
+	"name":""소고기 500g",
+	"origin":"국산",
+	"ranking":"1+++ 등급",
+	"keep":"냉동 보관",
+	"type":"포장육",
+	"추가 항목":"추가 항목 사항",
+	},
+]
+```
+
 <br/>
 
-
-## 전체 기능 영상
-
-### 노출 및 판매 기간 설정
-
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/84560867/151652562-43658a25-5ff8-40a4-bf59-bcde24ab04c2.gif)
-
-### 상품 등록
-
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/58350897/151654105-50f25d74-c3dd-42fd-ae02-aa17e0414743.gif)
-
-### 상품 옵션
-
-옵션 세트 추가 <br/><br/> ![옵션세트추가](https://user-images.githubusercontent.com/93420227/151652844-b57c1b8a-1bdf-405a-977d-3b7f7e4b7b90.gif) <br/><br/> 
-옵션 세트 내 옵션 추가 <br/><br/>  ![옵션세트내옵션추가](https://user-images.githubusercontent.com/93420227/151652835-69846b15-8f79-4461-a56c-4ffb39dcbc50.gif) <br/><br/> 
-추가 옵션 추가 <br/><br/>  ![추가옵션등록](https://user-images.githubusercontent.com/93420227/151652854-8cda92c2-0287-4e81-bf09-795a90e400d9.gif) <br/><br/> 
-이미지 프리뷰 첨부 <br/><br/> ![이미지첨부](https://user-images.githubusercontent.com/93420227/151652847-52a1969d-4eae-48d3-9679-2fbc334518a8.gif) <br/><br/> 
-
-### 상품 정보 고시(민지연)
-상품 정보 고시 (항목 옵션 추가/삭제) <br/><br/>  ![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/53133662/151654174-ea538855-2522-46fc-af51-e1ce68782f4e.gif) <br/><br/> 
-상품옵션 toggle <br/><br/> ![상품 옵션 toggle](https://user-images.githubusercontent.com/53133662/151653417-d94492b6-d325-4d99-9d84-0d93c8828a44.gif) <br/><br/> 
-상품소개이미지, 구매자추천이미지 <br/><br/> ![상품소개이미지, 구매자추천이미지](https://user-images.githubusercontent.com/53133662/151653648-6686792f-e4dc-4b70-8db4-47446d48d42f.png) <br/><br/> 
-
-## 추가 리팩토링 : [id 값으로 form 삭제/관리하기 (update : 3/21)](https://velog.io/@ichbinmin2/원티드-프리온보딩-프론트엔드-과정-2차-과제-상품-등록-관리-페이지)
+## ✍🏻 추가 리팩토링 : [id 값으로 form 삭제/관리하기 (update : 3/21)](https://velog.io/@ichbinmin2/원티드-프리온보딩-프론트엔드-과정-2차-과제-상품-등록-관리-페이지)
 
 #### ☑️ 이슈 확인 
 
@@ -234,76 +298,16 @@ return (
 
 > React는 `key`를 통해서 현재 배열의 길이를 비롯하여 이미 렌더링한 아이템의 갯수를 확인할 수 있고 동시에 아이템의 '위치'까지 고려하게 된다. 그런데 React가 개별 아이템을 식별할 수 있도록 해주는 바로 이 `key` 값을 `count`로 설정을 해주었기 때문에, 해당 form을 삭제 해도 `key` 값은 교체가 되지 않아 이러한 문제가 발생했던 것이다. 초반에 `key`의 문제라고 생각하지 못하고 여러번 로직을 수정했는데.. 꽤나 허탈한 감이 있다. 앞으로는 아무리 간단한 로직이라도, 기본을 지키고 있는지 체크하면서 코드를 좀더 면밀하게 살펴보며 코드를 작성해야 겠다는 생각이 든다. 
 
-</br>
-
-## 프로젝트 후기
-
-[✍🏻 프로젝트 회고 보러가기!](https://velog.io/@ichbinmin2/원티드-프리온보딩-프론트엔드-과정-2차-과제-상품-등록-관리-페이지)
-
-</br>
-
-## 프로젝트 구조 설명
-
-```bash
-.
-├── App.css
-├── App.js
-├── components
-│   ├── common
-│   │   ├── Button.jsx
-│   │   ├── Input.jsx
-│   │   ├── InsertImage.jsx
-│   │   ├── InsertImagePreview.jsx
-│   │   ├── Radio.jsx
-│   │   ├── Toggle.jsx
-│   │   ├── datepicker
-│   │   └── index.js
-│   ├── infoNotice
-│   │   ├── InfoNotice.jsx
-│   │   └── infoNoticeForm
-│   ├── layout
-│   │   ├── Contentwrap.jsx
-│   │   ├── navbar
-│   │   └── sidebar
-│   ├── productExpoSalesPeriod
-│   │   ├── ExposurePeriodSet.jsx
-│   │   └── SalesPeriodSet.jsx
-│   ├── productInfo
-│   │   └── ProductInfo.jsx
-│   ├── productOrderSet
-│   │   ├── ProductOrderStart.jsx
-│   │   └── ProductPickUp.jsx
-│   ├── productPreOrderReservation
-│   │   └── PreOrderReservetionSet.jsx
-│   └── productoption
-│       ├── Optionset.jsx
-│       ├── Suboption.jsx
-│       └── index.js
-├── hooks
-│   ├── SubmitForm.jsx
-│   ├── useForm.js
-│   └── validate.js
-├── index.css
-├── index.js
-├── logo.svg
-├── pages
-│   ├── admin.jsx
-│   └── adminSection
-│       ├── ExpoSalesPeriodSet.jsx
-│       ├── addoption.jsx
-│       ├── pagesInfoNotice.jsx
-│       ├── productInfo.jsx
-│       └── productorder.jsx
-└── style
-    ├── globalstyle.js
-    └── theme.js
-
-
-```
 
 <br/>
 
-## 설치 및 시작하는 법
+## 👯‍♀️ 팀 Repo 링크 가기
+
+["On-Basic" Repo 바로가기](https://github.com/On-Basic/ADM_PRODUCT_ADD)
+
+<br/>
+
+## 🖥 설치 및 시작하는 법
 
 **프로젝트 클론**
 
